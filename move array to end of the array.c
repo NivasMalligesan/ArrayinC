@@ -11,21 +11,13 @@ int main(){
     for(int i = 0 ; i < size ; i ++){
         scanf("%d",&array[i]);
     }
-    
-    for(int i = 0 ; i < size ; i++){
-        if(array[i] == 0 ){
-            zeros++;
-        }
-    }   
-    
+   
     int newindex = 0 ;
     
     for(int i = 0 ; i<size ; i ++ ){
         if(array[i] != 0){
             array[newindex]=array[i];
             newindex++;
-        }else{
-            zeros++;
         }
     }
     
